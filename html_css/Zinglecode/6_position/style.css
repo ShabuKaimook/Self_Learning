@@ -1,0 +1,47 @@
+.menu {
+    background-color: rgb(34, 34, 34);
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* layer */
+    z-index: 10;
+}
+
+.box{
+    margin-top: 60px;
+    /* assign frame */
+    /* absolute is free */
+    /* fix use with menubar make it follow u even u scroll it up down*/
+    position: relative;
+}
+
+.image {
+    width: 100%;
+}
+
+.live {
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    top: 10px;
+    left: 10px;
+}
+
+.views {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    bottom: 10px;
+    left: 10px
+}
+
+
+

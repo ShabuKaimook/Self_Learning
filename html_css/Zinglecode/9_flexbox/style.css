@@ -1,0 +1,38 @@
+.flexbox {
+    /* tell it is flex */
+    display: flex;
+    /* size cal if use border-box it will cal border */
+    box-sizing: border-box;
+    /* tell direction */
+    flex-direction: row;
+    /* make new line if dont wnat to make new line use nowrap */
+    flex-wrap: wrap;
+    /* item arrange by flex-direction*/
+    /* flex-start - every block will be in left side */
+    /* flex-end - every block will be in right side */
+    /* center - every block will be in center */
+    justify-content: left;
+    /* item arrange by invert flex-direction*/
+    /* stretch, center, flex-end, lfex-start */
+    align-items: flex-end;
+    /* margin */
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.item {
+    /* tell it is item in flex */
+    display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+.content {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 30px;
+}

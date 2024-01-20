@@ -1,0 +1,9 @@
+.image {
+    /* if use px image size will be that num */
+    /* if use precent image size will change by size of browser */
+    width: 100%;
+
+    /* constant width */
+    /* max-width: 800px; */
+    min-width: 300px;
+}

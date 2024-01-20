@@ -1,0 +1,26 @@
+/* .bg-image {
+    background-color: #000000;
+    background-image: url('rabbit2\ copy.avif');
+    background-position: left top; */
+    /* cover - bg over the frame */
+    /* contain - bg fix in the frame */
+    /* background-size: contain; */
+    /* if no-replace if content has space the image will not replace in hte space */
+    /* background-repeat: no-repeat; */
+/* } */
+
+.bg-image {
+    background-color: black;
+    background-image: url('rabbit2\ copy.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 160px 40px;
+    filter: grayscale(100%);
+}
+
+.title {
+    
+    color: white;
+    text-align: center;
+}
