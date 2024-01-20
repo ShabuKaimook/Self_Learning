@@ -1,0 +1,64 @@
+p {
+    line-height: 5px;
+}
+
+.follow-flex {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin-bottom: 100px;
+}
+
+.profile {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 70px;
+}
+
+.picture {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.user-info{
+    width: 190px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.bio, .stat{
+    font-weight: 200;
+    color: grey;
+}
+
+.follow-button {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(96, 96, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}

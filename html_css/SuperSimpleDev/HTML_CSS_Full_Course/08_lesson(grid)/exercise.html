@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-a{
+            display: grid;
+            grid-template-columns: 200px 75px;
+            margin-bottom: 100px;
+        }
+
+        .grid-c {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- a -->
+    <div class="grid-a">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+    
+    <!-- c -->
+    <div class="grid-c">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    
+</body>
+</html>

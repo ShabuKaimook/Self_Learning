@@ -1,0 +1,25 @@
+.box-b {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.item-a1 {
+    display: flex;
+    background-color: blue;
+    color: white;
+    width: 50px;
+}
+
+.item-a2 {
+    display: flex;
+    background-color: pink;
+    color: white;
+    flex: 1;
+}
+
+.item-a3 {
+    display: flex;
+    background-color: blue;
+    color: white;
+    width: 75px;
+}

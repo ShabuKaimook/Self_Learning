@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 40px;
+        }
+
+        .thumnail-pic {
+            width: 100%;
+        }
+
+        .video-info-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+
+        .user-pic {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            object-position: right;
+            border-radius: 100%;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 20px;
+        }
+
+        .author-name, .veiw{
+            color: grey;
+            font-size: 14px;
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="video-grid">
+        <div class="video-preview">
+            <div class="thumnail">
+                <img class="thumnail-pic" src="thumnails/hq720.webp">
+            </div>
+
+            <div class="video-info-grid">
+                <img class="user-pic" src="thumnails/hq720.webp">
+            
+                <div class="video-info">
+                    <p class="title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    <p class="author-name">
+                        Guy Peeranut
+                    </p>
+                    <p class="veiw">3.4M views - 6 years ago</p>
+                </div>
+            </div>  
+        </div>
+
+
+        <div class="video-preview">
+            <div class="thumnail">
+                <img class="thumnail-pic" src="thumnails/hq720.webp">
+            </div>
+
+            <div class="video-info-grid">
+                <div class="channel-pic">
+                    <img class="user-pic" src="thumnails/hq720.webp">
+                </div>
+                <div class="video-info">
+                    <p class="title">
+                        Try Not To Laugh Challenge #9
+                    </p>
+                    <p class="author-name">
+                        Guy Peeranut
+                    </p>
+                    <p class="veiw">3.4M views - 6 years ago</p>
+                </div>
+            </div>  
+        </div>
+
+
+        <div class="video-preview">
+            <div class="thumnail">
+                <img class="thumnail-pic" src="thumnails/hq720.webp">
+            </div>
+
+            <div class="video-info-grid">
+                <div class="channel-pic">
+                    <img class="user-pic" src="thumnails/hq720.webp">
+                </div>
+                <div class="video-info">
+                    <p class="title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+                    <p class="author-name">
+                        Guy Peeranut
+                    </p>
+                    <p class="veiw">3.4M views - 6 years ago</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+</body>
+</html>

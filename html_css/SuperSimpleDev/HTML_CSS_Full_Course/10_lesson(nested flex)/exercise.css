@@ -1,0 +1,154 @@
+p { 
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+.inbox-flex {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 100px;
+}
+
+.header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin-left: 10px;
+    color: gray;
+}
+
+.inbox {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    width: 70px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100px;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+    margin-top: 10px;
+    height: 40px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.time{
+    color: gray;
+}
+
+.below-inbox {
+    height: 50px;
+}
+
+.text-header {
+    font-weight: bold;
+}
+
+.message {
+    margin-top: 4px;
+    color: gray;
+}
+
+/* end */
+
+
+
+/* f */
+.post-flex {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    width: 420px;
+    height: 180px;
+    margin-bottom: 100px;
+}
+
+.twitter-profile {
+    display: flex;
+    align-items: start;
+    width: 70px;
+}
+
+.twitter-profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.info {
+    flex: 1;
+    margin-top: 7px;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.tag-user {
+    font-weight: 500;
+    color: grey;
+}
+
+.text-post {
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.link-box-flex {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+
+.link-image {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 20px;
+}
+
+.link-info {
+    flex: 1;
+}
+
+
+
