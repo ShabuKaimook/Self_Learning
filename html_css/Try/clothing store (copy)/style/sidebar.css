@@ -1,0 +1,74 @@
+.sidebar {
+    position: fixed;
+    z-index: 200;
+    background: #fff;
+    top: 0;
+    left: -9999px;
+    bottom: 0;
+    width: 45%;
+    transition: 1s;
+}
+
+.sidebar .logo a{
+    color: #000;
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.sidebar .logo {
+    margin-bottom: 75px;
+    padding: 30px 15px;
+}
+
+.sidebar .fa-times {
+    font-weight: 600;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.sidebar .product-type,
+.sidebar .brand-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 75px;
+}
+
+.sidebar .product-type a,
+.sidebar .brand-info a {
+    color: grey;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.sidebar .brand-info a {
+    font-weight: 400;
+}
+
+.sidebar .product-type a:hover,
+.sidebar .brand-info a:hover {
+    background: rgb(192, 192, 192);
+    color: #000;
+}
+
+@media (min-width: 1000px) {
+    .content-for-large {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+        position: relative;
+        left: 0;
+        max-width: 300px;
+    }
+
+    .sidebar .fa-times {
+        top: -9999px;
+    }
+}

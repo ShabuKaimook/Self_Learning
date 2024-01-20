@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-width: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header .banner {
+    width: 100%;
+    min-width: 100vh;
+}
+
+
+.flex {
+    display: flex;
+    padding: 2% 6%;
+}

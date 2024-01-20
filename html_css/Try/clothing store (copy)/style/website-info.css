@@ -1,0 +1,66 @@
+.website-info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 40px 7.5px;
+    background-color: rgb(235, 235, 235);
+}
+.website-info h3 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-box,
+.about-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 33%;
+    height: 100%;
+}
+
+.contact-box p,
+.about-box a,
+.last-col p{
+    font-size: 12px;
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.store, .accept {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.contact-box input {
+    border: 1px solid rgb(190, 190, 190);
+    background: #fff;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact-box button {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-box button:hover {
+    background: #5e5e5e;
+}
+
+.last-col span {
+    margin-left: 3px;
+}
