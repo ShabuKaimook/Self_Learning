@@ -1,0 +1,20 @@
+.input {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(105, 105, 255);
+}
+
+.output {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
