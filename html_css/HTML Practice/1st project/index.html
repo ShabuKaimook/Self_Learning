@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <img class="logo-nav" src="https://realbearpro.com/img/logo-full.png" alt="">
+            </a>
+
+            <div class="right-side">
+                <div class="brandname">BearHug</div>
+                <div class="cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="cart-quantity">5</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   <div class="container">
+        <div class="sidebar">
+            <input type="text" placeholder="Search" class="search-bar">
+
+            <div class="menu">
+                <a href="#">Menu1</a>
+                <a href="#">Menu2</a>
+                <a href="#">Menu3</a>
+                <a href="#">Menu4</a>
+            </div>
+        </div>
+
+        <div class="product-view">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+
+                <div class="product-info">
+                    <p class="product-name">
+                        Product Name
+                    </p>
+                    <p class="product-price">
+                        500 Baht
+                    </p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+
+                <div class="product-info">
+                    <p class="product-name">
+                        Product Name
+                    </p>
+                    <p class="product-price">
+                        500 Baht
+                    </p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+
+                <div class="product-info">
+                    <p class="product-name">
+                        Product Name
+                    </p>
+                    <p class="product-price">
+                        500 Baht
+                    </p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+
+                <div class="product-info">
+                    <p class="product-name">
+                        Product Name
+                    </p>
+                    <p class="product-price">
+                        500 Baht
+                    </p>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+
+                <div class="product-info">
+                    <p class="product-name">
+                        Product Name
+                    </p>
+                    <p class="product-price">
+                        500 Baht
+                    </p>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div class="modal" style="display: none;">
+        <div class="modal-bg"></div>
+        <div class="modal-page">
+            <div class="detail">Details</div>
+            <div class="modal-content">
+                <img class="modal-image" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+                <div class="modal-details">
+                    <p class="modal-product-name">Product Name</p>
+                    <p class="modal-product-price">500 THB</p>
+                    <p class="modal-product-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quia fugit maxime necessitatibus ipsa repudiandae vitae tempore tenetur dolorum minus?</p>
+
+                    <div class="btn-control">
+                        <button class="btn">
+                            Close
+                        </button>
+                        <button class="btn btn-buy">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <div class="modal">
+    <div class="modal-bg"></div>
+    <div class="modal-page">
+        <div class="detail">My Cart</div>
+        <div class="cart-list">
+            <div class="cart-list-item">
+                <div class="cart-list-left">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+                    <div class="cart-list-detail">
+                        <p>Product Name</p>
+                        <p>500 BTH</p>
+                    </div>
+                </div>
+
+                <div class="cart-list-right">
+                    <p class="btnc">-</p>
+                    <p>1</p>
+                    <p class="btnc">+</p>
+                </div>
+            </div>
+
+            <div class="cart-list-item">
+                <div class="cart-list-left">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+                    <div class="cart-list-detail">
+                        <p>Product Name</p>
+                        <p>500 BTH</p>
+                    </div>
+                </div>
+
+                <div class="cart-list-right">
+                    <p class="btnc">-</p>
+                    <p>1</p>
+                    <p class="btnc">+</p>
+                </div>
+            </div>
+
+            <div class="cart-list-item">
+                <div class="cart-list-left">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+                    <div class="cart-list-detail">
+                        <p>Product Name</p>
+                        <p>500 BTH</p>
+                    </div>
+                </div>
+
+                <div class="cart-list-right">
+                    <p class="btnc">-</p>
+                    <p>1</p>
+                    <p class="btnc">+</p>
+                </div>
+            </div>
+
+            <div class="cart-list-item">
+                <div class="cart-list-left">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
+                    <div class="cart-list-detail">
+                        <p>Product Name</p>
+                        <p>500 BTH</p>
+                    </div>
+                </div>
+
+                <div class="cart-list-right">
+                    <p class="btnc">-</p>
+                    <p>1</p>
+                    <p class="btnc">+</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-control">
+            <button class="btn">
+                cancle
+            </button>
+            <button class="btn btn-buy">Buy</button>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
