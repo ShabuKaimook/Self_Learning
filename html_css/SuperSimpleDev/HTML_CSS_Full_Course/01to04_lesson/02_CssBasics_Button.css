@@ -1,0 +1,60 @@
+.subscribe {
+    background-color: rgb(197, 3, 3);
+    color: white;
+    height: 36px;
+    width: 105px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: opacity 0.15s;
+}
+
+/* hover will be use if mouse on button instead subscribe */
+.subscribe:hover {
+    opacity: 70%;
+}
+
+/* active will be use if click on a button */
+.subscribe:active {
+    opacity: 40%;
+}
+
+.join {
+    background-color: white;
+    color: rgb(103, 103, 245);
+    border: 2px solid rgb(103, 103, 245);
+    height: 36px;
+    width: 60px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 1s, color 1s;
+}
+
+.join:hover {
+    background-color: rgb(103, 103, 245);
+    color: white;
+}
+
+.join:active {
+    opacity: 0.7;
+}
+
+.tweet {
+    background-color: rgb(103, 103, 245);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 36px;
+    width: 70px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: box-shadow 0.5s;
+}
+
+.tweet:hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
