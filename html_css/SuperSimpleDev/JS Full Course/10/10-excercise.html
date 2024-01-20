@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .e-10 {
+            background-color: rgb(232, 232, 232);
+            border: none;
+            color: black;
+            padding: 10px;
+            border-radius: 8px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .is-click {
+            background-color: #000;
+            color: #fff;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <button class="e-10 game" onclick="
+    turnOnOff('.game');
+    ">Gaming</button>
+
+    <button class="e-10 music" onclick="
+    turnOnOff('.music');
+    ">Music</button>
+
+    <button class="e-10 tech" onclick="
+    turnOnOff('.tech');
+    ">Tech</button>
+
+<script>
+    function turnOnOff(selector) {
+        const button = document.querySelector(selector);
+
+        if (!button.classList.contains('is-click')){
+            oneButtonOn();
+            button.classList.add('is-click');
+        }
+        else button.classList.remove('is-click');
+    }
+
+    function oneButtonOn(){
+        const previousButton = document.querySelector('.is-click');
+        if (previousButton) {
+          previousButton.classList.remove('is-click');
+        } 
+    }
+
+
+</script>
+
+</body>
+</html>

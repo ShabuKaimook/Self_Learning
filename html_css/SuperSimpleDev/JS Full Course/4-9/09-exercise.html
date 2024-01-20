@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 1 -->
+    <input type="text" class="input-name" placeholder="Enter Name" onkeydown="
+        enterKey(event);
+    ">
+    <button onclick="
+        nameInput();
+    ">Submit</button>
+    <p class="name-show"></p>
+
+    <!-- 2 -->
+    <p>Amazon Shipping Calculator</p>
+    <input type="text" name="" class="js-cost-input" 
+    placeholder="Cost of order" onkeydown="
+        enterKeyCheck(event);
+    ">
+    <button onclick="
+        calculateTotal();
+    ">Calculate</button>
+
+    <p class="display-cost"></p>
+
+    <!-- 3 -->
+    <p>text update</p>
+    <input type="text" placeholder="type anything" class="text-update-input"
+    onkeyup="
+        updateText(event);
+    ">
+    <p class="text-show"></p>
+
+<script>
+    // 1
+    function nameInput(){
+        const name = (document.querySelector('.input-name')).value;
+
+        document.querySelector('.name-show').innerHTML = `Your name is ${name}`;
+    }
+
+    function enterKey(event){
+        if (event.key === 'Enter') nameInput();
+    }
+
+    // 2
+    function calculateTotal(){
+        const inputElement = document.querySelector('.js-cost-input');
+        let cost = Number(inputElement.value) * 100;
+
+        if (cost < 4000) 
+            cost += 1000;
+
+        document.querySelector('.display-cost').innerHTML = `$${cost/100}`;
+    }
+
+    function enterKeyCheck(event) {
+        if (event.key === 'Enter') calculateTotal();
+    }
+
+    // 3
+    function updateText(event){
+        let text = document.querySelector('.text-update-input');
+        document.querySelector('.text-show').innerHTML = text.value; 
+    }
+
+
+</script>
+
+
+    
+</body>
+</html>

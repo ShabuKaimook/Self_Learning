@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="input-num" type="text" placeholder="Enter num" onkeydown="
+    enterInput(event);
+    ">
+    <button onclick="
+    errorNum();
+    " class="cal-button">Calculate</button>
+    <p class="error"></p>
+
+<script>
+    function errorNum(){
+        let inputNum = document.querySelector('.input-num');
+
+        num = Number(inputNum.value);
+        if (num < 0)
+            document.querySelector('.error').innerHTML = 'Error: less than 0';
+        else
+        document.querySelector('.error').innerHTML = '';
+    }
+
+    function enterInput(event){
+        if (event.key === 'Enter') errorNum();
+    }
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Projects</title>
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .subscribe-button {
+            background: #000;
+            padding: 10px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+
+        .cost-input {
+            padding: 12.5px 10px;
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+
+        .calculate-button {
+            font-size: 16px;
+            padding: 14px 10px;
+            background: green;
+            color: #fff;
+            border: none;
+        }
+
+        .is-subscribed {
+            background: rgb(220, 220, 220);
+            color: #000;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <p>Youtube Subscribe</p>
+    <button class="subscribe-button" onclick="subscribe()">Subscribe</button>
+
+    <p>Amazon Shipping Calculator</p>
+    <input type="text" name="" class="js-cost-input cost-input" 
+    placeholder="Cost of order" onkeydown="
+        enterKeyCheck(event);
+    ">
+    <button class="calculate-button" onclick="
+        calculateTotal();
+    ">Calculate</button>
+    <p class="display-cost"></p>
+
+    <p>rock paper scissors</p>
+    <a href="09-rock-paper-scissors.html" target="_blank">Click Here</a>
+    
+
+
+    <script>
+
+        window.document
+        window.console.log('window');
+        window.alert
+
+        let subscribeButton = document.querySelector(".subscribe-button");
+        
+        function subscribe() {
+            if (subscribeButton.innerHTML === 'Subscribe'){
+                subscribeButton.innerHTML = 'Subscribed';
+                subscribeButton.classList.add('is-subscribed');
+            }else {
+                subscribeButton.innerHTML = 'Subscribe';
+                subscribeButton.classList.remove('is-subscribed');
+            }
+        }
+        
+        function calculateTotal(){
+            const inputElement = document.querySelector('.js-cost-input');
+            let cost = Number(inputElement.value);
+
+            if (cost < 40) 
+                cost += 10;
+
+            document.querySelector('.display-cost').innerHTML = `$${cost}`;
+        }
+
+        function enterKeyCheck(event) {
+            if (event.key === 'Enter') calculateTotal();
+        }
+    </script>
+
+
+    
+</body>
+</html>

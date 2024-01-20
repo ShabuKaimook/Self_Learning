@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="10-calculator.css">
+</head>
+<body>
+    <div class="calculator-box">
+        <p class="display calculation"></p>
+
+        <div class="button">
+            <button class="num-but" onclick="updataCal(1);">1</button>
+            <button class="num-but" onclick="updataCal(2);">2</button>
+            <button class="num-but" onclick="updataCal(3);">3</button>
+            <button class="num-but sign" onclick="updataCal('+');">+</button>
+        </div>
+        <div class="button">
+            <button class="num-but" onclick="updataCal(4);">4</button>
+            <button class="num-but" onclick="updataCal(5);">5</button>
+            <button class="num-but" onclick="updataCal(6);">6</button>
+            <button class="num-but sign" onclick="updataCal('-');">-</button>
+        </div>
+        <div class="button">
+            <button class="num-but" onclick="updataCal(7);">7</button>
+            <button class="num-but" onclick="updataCal(8);">8</button>
+            <button class="num-but" onclick="updataCal(9);">9</button>
+            <button class="num-but sign" onclick="updataCal('x');">x</button>
+        </div>
+        <div class="button">
+            <button class="num-but" onclick="updataCal(0);">0</button>
+            <button class="num-but" onclick="updataCal('.');">.</button>
+            <button class="num-but" onclick="updataCal('=');">&equals; </button>
+            <button class="num-but sign" onclick="updataCal('/');">/</button>
+        </div>
+        <div class="button">
+            <button class="num-but" onclick="clear();">clear</button>
+        </div>
+
+    </div>
+
+<script src="10-calculator.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1</title>
+</head>
+<body>
+    <button class="js-button" onclick="
+    oneSecClick();
+    ">Start</button><br>
+
+    <button class="addToCart" onclick="
+    added();
+    ">Add to Cart</button>
+    
+    <p class="display"></p><br>
+
+    <button onclick="
+    notifications(1);
+    " >Add</button>
+    
+    <button onclick="
+    notifications(-1);
+    " >Remove</button>
+
+
+    <script>
+        function oneSecClick(){
+            setTimeout(function(){
+                document.querySelector('.js-button')
+                .innerHTML = 'Finished!';
+            }, 1000);
+
+            document.querySelector('.js-button')
+                .innerHTML = 'Loading...';
+        }
+
+        let isShow = false;
+        function added(){
+            if (!isShow){
+                document.querySelector('.display')
+                .innerHTML = '<p>Added</p>';
+                isShow = true;
+            }else{
+                setTimeout(function(){
+                    document.querySelector('.display')
+                    .innerHTML = '';
+                }, 2000);
+                isShow = false;
+            }    
+        }
+        
+        let notiNum = 0;
+        function notifications(num){
+            notiNum += num;
+            if (notiNum <= 0) {
+                document.title = 'App';
+            }
+            else {
+                setInterval(function(){
+                    document.title = 'App';
+                }, 1500);
+                document.title = `(${notiNum}) New messages`;
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
