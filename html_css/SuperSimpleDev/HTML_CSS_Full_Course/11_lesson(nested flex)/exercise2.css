@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* e */
+.facebook-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 100px;
+}
+
+.facebook-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.facebook-user-profile {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.facebook-user-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.facebook-button {
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-friend-button,
+.message-button {
+    background-color: rgb(95, 95, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    margin-right: 12px;
+}
+
+.message-button{
+    background-color: rgb(228, 228, 228);
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* f */
+.discord-sidebar{
+    position: fixed;
+    top: 66px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 300px;
+}
+
+.channel-section {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background-color: rgb(39, 39, 39);
+    padding-top: 20px;
+}
+
+.channel-picture {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    margin-left: 15px;
+    margin-bottom: 12px;
+}
+
+.info-section{
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-bottom: 13px;
+}
+
+.info {
+    color: white;
+    font-weight: bold;
+}
+
+.plus-sign {
+    color: rgb(122, 121, 121);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    color:rgb(120, 120, 120);
+    margin-bottom: 20px;
+}

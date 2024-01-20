@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* header */
+.header-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55px;
+    border: 1px solid black;
+}
+
+/* left-sec */
+.left-section {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-right: 70px;
+}
+
+.hamburger-menu {
+    margin-right: 30px;
+    margin-left: -20px;
+    height: 25px;
+}
+
+.youtube-logo {
+    height: 25px;
+}
+/* left sec */
+
+/* mid-sec */
+.mid-section {
+    flex: 1fr;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 300px;
+    height: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+.search-icon {
+    height: 24px;
+    width: 60px;
+    border: 1px solid rgb(196, 196, 196);
+    background-color: rgb(239, 239, 239);
+    margin-left: -1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.voice-search-icon{
+    height: 24px;
+    width: 34px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 100%;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* mid-sec */
+
+/* right-sec */
+.right-section {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-right: -70px;
+}
+
+.upload-icon,
+.youtube-app-icon,
+.noti-icon,
+.user-profile {
+    height: 40px;
+}
+
+.youtube-app-icon {
+    
+}
+
+.noti-icon {
+    
+}
+
+
+
+/* video-content */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+    column-gap: 20px;
+}
+
+
+/* video-preview */
+.thumnail {
+    width: 100%;
+}
+
+.thumnail-pic {
+    width: 100%;
+}
+
+
+/* video-info */
+.video-info {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 10px;
+}
+
+.channal-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.video-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.creator-name,
+.video-stat {
+    color: grey;
+    margin-bottom: 5px;
+}
+
